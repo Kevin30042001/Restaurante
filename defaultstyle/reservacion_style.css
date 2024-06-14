@@ -1,0 +1,38 @@
+body {
+    background-image: url('imagenes/fondo_home.jpg');
+    background-position: top;
+    background-repeat: repeat-y;
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    width: auto;
+}
+
+.icono-home {
+    width: 30px;
+    height: 30px;
+}
+
+form {
+    width: 70%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, .2);
+    border: 2px solid rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}

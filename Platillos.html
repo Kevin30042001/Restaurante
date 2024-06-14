@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <link rel="icon" href="defaultstyle/imagenes/icono_titulo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="defaultstyle/Platillos_Style.css" type="text/css">
+  </head>
+<body>
+  <nav class="navbar navbar-expand-md navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img class="icono-home" src="defaultstyle/imagenes/icono_home.png" alt="Home Icon">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Informacion.html">ACERCA DE NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Platillos.html">PLATILLOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Pedido.html">REALIZAR PEDIDO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/proyecto/php/admin_menu.php">ADMINISTRADOR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/proyecto/reservacion.html">RESERVACIÓN</a>
+        </li>
+        
+          <li class="nav-item">
+              <a class="nav-link active" href="agregar_producto.html">AGREGAR PRODUCTO</a>
+          </li>
+
+            </ul>
+          </div>
+        </div>
+      
+       
+      </nav>
+    
+
+
+    <div class="categoria-btns" style="margin-top: 100px;">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-3" type="search" placeholder="Nombre Del Platillo" aria-label="Search" id="buscar">
+          <button class="btn btn-outline-light" type="button" onclick="buscarPlatillo()">Buscar</button>
+        </form>
+      </div>
+    <button class="btn btn-primary" data-categoria="entradas">Entradas</button>
+    <div class="contenedor1">
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Bruschetta.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Bruschetta</h1>
+            <p>Tostadas crujientes con tomates frescos, albahaca y aceite de oliva.</p>
+            <p>Precio: $7.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Calamares.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Calamares Fritos</h1>
+            <p>Calamares empanizados y fritos, servidos con salsa marinara.</p>
+            <p>Precio: $9.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Ensalada.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Ensalada Caprese</h1>
+            <p>Rodajas de tomate y mozzarella fresca con albahaca, aceite de oliva y vinagre balsámico.</p>
+            <p>Precio: $8.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Alcachofas.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Alcachofas a la Parrilla</h1>
+            <p>Alcachofas tiernas asadas a la parrilla, servidas con salsa alioli.</p>
+            <p>Precio: $9.49</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Sopa.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Sopa de Tomate </h1>
+            <p>Deliciosa sopa cremosa de tomate con un toque de albahaca fresca.</p>
+            <p>Precio: $5.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Empanadas.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Empanadas</h1>
+            <p>Empanadas tradicionales de El Salvador rellenas de plátano maduro y crema, fritas hasta alcanzar una
+              perfección crujiente.</p>
+            <p>Precio: $6.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <button class="btn btn-primary" data-categoria="principales">Platos Principales</button>
+    <div class="contenedor1">
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/platillos_pasta.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Pasta</h1>
+            <p>Deliciosa pasta al huevo con salsa marinara y albahaca fresca.</p>
+            <p>Precio: $14.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/platillos_hamburguesa.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Hamburguesa</h1>
+            <p>Jugosa hamburguesa de carne 100% natural, con queso cheddar, tocino, lechuga, tomate y cebolla
+              caramelizada.</p>
+            <p>Precio: $12.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/platillos_pizza.png" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Pizza Artesanal</h1>
+            <p>Pizza casera con masa artesanal, salsa de tomate fresco, queso mozzarella y tus ingredientes favoritos.
+            </p>
+            <p>Precio: $18.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo4">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="aumento" src="defaultstyle/imagenes/platillos_parillada.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Parrillada</h1>
+            <p>Exquisita parrillada con cortes selectos de carne a la parrilla, acompañada de verduras asadas y
+              chimichurri.</p>
+            <p>Precio: $24.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo5">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/platillos_spagutthi.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Spaghetti</h1>
+            <p>Deliciosos macarrones con salsa pomodoro casera y albóndigas al estilo italiano.</p>
+            <p>Precio: $16.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo6">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/platillos_gourtmet.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Platillo Gourmet</h1>
+            <p>Exquisito filete de res con salsa de vino tinto, puré de papas trufado y verduras de temporada.</p>
+            <p>Precio: $29.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo7">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="aumento" src="defaultstyle/imagenes/platillos_kobe.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Carne Kobe</h1>
+            <p>Corte premium de carne Kobe, la más tierna y jugosa del mundo, acompañada de puré de papas y verduras
+              salteadas.</p>
+            <p>Precio: $39.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo8">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/platillos_langosta.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Langosta</h1>
+            <p>Deliciosa langosta fresca a la parrilla, servida con mantequilla de ajo y verduras al vapor.</p>
+            <p>Precio: $34.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" data-categoria="postres">Postres</button>
+    <div class="contenedor1">
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Flan.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Flan de Caramelo</h1>
+            <p>Delicioso flan cremoso cubierto con una suave capa de caramelo.</p>
+            <p>Precio: $4.99</p>
+
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Pastel.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Pastel Tres Leches</h1>
+            <p>Bizcocho esponjoso empapado en una mezcla de tres leches, cubierto con crema batida.</p>
+            <p>Precio: $5.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Tiramisú.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Tiramisú</h1>
+            <p>Postre italiano clásico con capas de bizcocho empapado en café, mascarpone y cacao en polvo.</p>
+            <p>Precio: $6.99</p>
+
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Churros.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Churros con Chocolate</h1>
+            <p>Churros crujientes espolvoreados con azúcar y canela, servidos con una rica salsa de chocolate.</p>
+            <p>Precio: $5.49</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Cheesecake.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Cheesecake de Fresa</h1>
+            <p>Cheesecake cremoso con una base de galleta, cubierto con fresas frescas.</p>
+            <p>Precio: $6.49</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/Helado.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Helado Artesanal</h1>
+            <p>Helado hecho en casa disponible en una variedad de sabores: vainilla, chocolate, fresa, y más.</p>
+            <p>Precio: $3.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" data-categoria="bebidas">Bebidas</button>
+    <div class="contenedor1">
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/licuado_guineo.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Licuado de Guineo</h1>
+            <p>Refrescante y cremoso licuado de guineos maduros con leche, perfecto para cualquier momento del día.</p>
+            <p>Precio: $1.50</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/licuado_frutas.jpg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Licuado de Frutas Mixtas</h1>
+            <p>Una mezcla vibrante de fresas, arándanos y mango, combinado con leche y un toque de miel.</p>
+            <p>Precio: $5.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/licuado_verde.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Licuado Verde</h1>
+            <p>Un saludable licuado de espinacas, guineos y leche, con un toque de miel para endulzar.</p>
+            <p>Precio: $5.49</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/licuado_energetico.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Licuado Energético</h1>
+            <p>Licuado de guineo con mantequilla de maní y proteína en polvo, ideal para después de entrenar.</p>
+            <p>Precio: $6.49</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/jugo_naranja.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Jugo de Naranja Natural</h1>
+            <p>Jugo fresco exprimido de naranjas 100% naturales.</p>
+            <p>Precio: $3.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/batido.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Batido de Fresa</h1>
+            <p>Cremoso batido de fresas frescas y leche, con un toque de azúcar para endulzar.</p>
+            <p>Precio: $4.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="platillo1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="defaultstyle/imagenes/tropical.jpeg" alt="Platillo 1">
+          </div>
+          <div class="flip-card-back">
+            <h1>Smoothie Tropical</h1>
+            <p>Exótico smoothie de piña, mango y leche de coco, perfecto para un día caluroso.</p>
+            <p>Precio: $5.99</p>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script src="defaultscripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

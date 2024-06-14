@@ -1,0 +1,99 @@
+html, body {
+    height: 100%;
+
+}
+
+body {
+    background-image: url('imagenes/fondo_home.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%; /* Ajusta el margen superior para evitar que el contenido esté detrás de la barra de navegación */
+    width: auto;
+}
+
+/* El resto del CSS permanece igual */
+.icono-home {
+    width: 30px;
+    height: 30px;
+}
+
+.wrapper {
+    width: 70%; /* Ajustamos el ancho del contenedor al 70% del ancho de la pantalla */
+    max-width: 600px; /* Establecemos un ancho máximo para el contenedor */
+    height: auto; /* Permitimos que la altura del contenedor se ajuste automáticamente según el contenido */
+    background-color: rgba(0, 0, 0, .2);
+    border: 2px solid rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-sizing: border-box; /* Incluimos el padding en el cálculo del ancho */
+    margin-bottom: 50px; /* Agregamos un margen inferior para dar espacio */
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    font-family: 'Lora', cursive;
+    font-weight: 600;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%; /* Ajustamos el ancho del input al 100% */
+    height: 40px; /* Establecemos una altura fija para los inputs */
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    padding: 0 15px; /* Agregamos un padding horizontal para separar el texto del borde */
+    box-sizing: border-box; /* Incluimos el padding en el cálculo del ancho */
+}
+
+.input-box p {
+    text-align: left;
+    margin: 10px 0; /* Agregamos un pequeño margen entre los párrafos */
+}
+
+.calendario {
+    text-align: center;
+    filter: brightness(0) invert(1);
+}
+
+.wrapper .btn {
+    width: 40%;
+    height: 45px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 15px;
+}
+
+.buttom-aling{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-title {
+    color: black;
+}
+
+.modal-body{
+    color: black;
+}

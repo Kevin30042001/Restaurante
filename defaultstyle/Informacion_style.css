@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+
+}
+
+body {
+    background-image: url('imagenes/fondo_home.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+.icono-home {
+    width: 30px;
+    height: 30px;
+}
+
+.contenedor1 h1 {
+    font-size: 70px;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container h2 {
+    font-size: 20px;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
